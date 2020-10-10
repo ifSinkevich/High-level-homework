@@ -1,6 +1,6 @@
 
 let num = 266219;
-let newNum = num.toString(10);
+let newNum = num.toString();
 let mult = 1;
 
 for (let i = 0; i < newNum.length; i++){
@@ -10,4 +10,4 @@ for (let i = 0; i < newNum.length; i++){
 
 mult = mult ** 3;
 console.log(mult);
-console.log((mult.toString(10)).slice(0,2));
+console.log((mult.toString()).slice(0,2));
