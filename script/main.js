@@ -15,6 +15,9 @@ switch (lang) {
     break;
   case 'en':
     console.log('Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday');
+    break;
+  default:
+    console.log('Упс(... повторите попытку');
 }
 
 let days = ['ru', 'en'];
