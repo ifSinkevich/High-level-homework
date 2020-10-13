@@ -1,13 +1,30 @@
+'use strict';
 
-let num = 266219;
-let newNum = num.toString();
-let mult = 1;
+let lang = prompt('Выбирайте ru или en:');
 
-for (let i = 0; i < newNum.length; i++){
-  console.log(newNum[i]);
-  mult = mult * newNum[i];
+if (lang === 'ru') {
+  console.log('Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье');
+}
+if (lang === 'en') {
+  console.log('Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday');
 }
 
-mult = mult ** 3;
-console.log(mult);
-console.log((mult.toString()).slice(0,2));
+switch (lang) {
+  case 'ru':
+    console.log('Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье');
+    break;
+  case 'en':
+    console.log('Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday');
+}
+
+let days = ['ru', 'en'];
+days['ru'] = 'Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье';
+days['en'] = 'Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday';
+console.log(days[lang]);
+  
+
+
+let name = prompt('Как Вас зовут?');
+let namePerson = name == 'Артём' ? 'Директор' : name == 'Максим' ? 'Преподаватель' : 'Студент';
+console.log(namePerson);
+
